@@ -1,0 +1,46 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.pydevproject
+*.pyc
+
+# Dependency management
+pip-log.txt
+pip-wheel-metadata/
+pip-delete-this-directory.txt
+
+# Testing frameworks
+.pytest_cache/
+.coverage
+
+# Environment files
+.env
+
+# Compiled Python bytecode
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and temporary files
+*.log
+*.swp
+*~
+\#*#
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+myenv
