@@ -2,7 +2,7 @@ import os
 import openai
 import bcrypt
 import jwt
-from flask import jsonify
+from flask import jsonify,request
 from models.all_model import promptCollection, prompt_schema, validate_data
 from bson import ObjectId, json_util
 
@@ -19,4 +19,5 @@ from bson import ObjectId, json_util
 # )
 
 def prompt_controller():
-  print('ai')
+  user_id = request.user_id
+  return jsonify(user_id)

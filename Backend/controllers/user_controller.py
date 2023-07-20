@@ -115,7 +115,10 @@ def user_login():
         hashed_password = is_present.get('password')
 
         if bcrypt.checkpw(password.encode(), hashed_password):
-            normal_token = jwt.encode({"masai": "masai"}, NORMAL_KEY, algorithm="HS256")
+            
+            userId=str(is_present.get('_id'))
+            
+            normal_token = jwt.encode({"user_id": userId}, NORMAL_KEY, algorithm="HS256")
 
             # Convert is_present to JSON serializable format
             is_present_serializable = json_util.dumps(is_present)
