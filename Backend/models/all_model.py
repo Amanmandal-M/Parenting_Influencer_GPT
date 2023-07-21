@@ -19,7 +19,8 @@ user_schema = {
 prompt_schema = {
     "userId": ObjectId,
     "question": str,
-    "language": str
+    "language": str,
+    "convertedCode": str
 }
 
 # Function to validate the data against the schema

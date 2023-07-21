@@ -11,6 +11,7 @@ pydantic==1.9.0
 pytest==7.0.1
 Jinja2==3.0.3
 Werkzeug==2.0.2
+openai==0.27.0
 
 
 # activating or deactivating virtual env
