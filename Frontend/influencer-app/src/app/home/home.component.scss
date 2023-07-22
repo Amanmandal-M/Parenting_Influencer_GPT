@@ -1,0 +1,79 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    main {
+      .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+  
+        .hero-content {
+          max-width: 500px;
+  
+          h1 {
+            font-size: 36px;
+            font-weight: bold;
+          }
+  
+          p {
+            font-size: 18px;
+            margin-top: 10px;
+          }
+  
+          .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            margin-top: 20px;
+  
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+  
+        .hero-image {
+          background-image: url('https://img.freepik.com/free-photo/businessman-dressed-like-superhero_1368-6508.jpg?w=740&t=st=1690045514~exp=1690046114~hmac=031db00ec612f19b14e86d1676cbb763b4d1f0970b35cc3e8c8cae53219c9f42');
+          background-size: cover;
+          background-position: center;
+          width: 50%;
+          height: 400px;
+          border-radius: 5px;
+        }
+      }
+  
+      .about-section {
+        padding: 40px 0;
+  
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+        }
+  
+        p {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+  
+      /* Add styles for other sections as needed */
+    }
+  
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f4f4f4;
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  

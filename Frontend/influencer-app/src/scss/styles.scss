@@ -12,13 +12,15 @@ body {
   background-color: $primary-color;
   height: $navbar-height;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .navbar li {
@@ -97,3 +99,4 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
