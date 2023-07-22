@@ -1,0 +1,99 @@
+// styles.scss
+
+@import 'variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: $primary-color;
+  height: $navbar-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.homepage {
+  padding: 20px;
+}
+
+.prompt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.chat-history {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.user-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
