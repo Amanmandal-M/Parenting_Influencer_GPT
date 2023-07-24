@@ -1,1 +1,7 @@
-<p>login works!</p>
+<!-- login.component.html -->
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="email" required placeholder="Enter Your email id">
+    <input type="password" formControlName="password" required placeholder="Enter Your password">
+    <input type="submit" value="Login" [disabled]="isLoading">
+    <div *ngIf="isLoading">Loading...</div>
+</form>

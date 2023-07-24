@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://parenting-influencer-backend.onrender.com",
+      "secure": false
+    }
+  }
+  

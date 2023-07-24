@@ -1,0 +1,23 @@
+// login.component.scss
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+    }
+  
+    input[type="submit"] {
+      background-color: #2196f3;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  
