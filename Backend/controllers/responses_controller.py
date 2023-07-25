@@ -71,3 +71,19 @@ def prompt_controller():
     except Exception as error:
         print("Error:", error)
         return jsonify(error="An error occurred"), 500
+    
+    
+def prompt_data_controller():
+    user_id = request.user_id
+    # Use a dictionary to define the query with user_id field
+    query = {"user_id": user_id}
+    
+    # Use find() with the query to get the data
+    data = promptCollection.find(query)
+    
+    # Convert the data to a list, and use json_util to serialize the ObjectId to JSON
+    data_list = list(data)
+    serialized_data = json_util.dumps(data_list)
+    
+    # Return the serialized data as JSON
+    return jsonify(success=True, data=serialized_data), 200
