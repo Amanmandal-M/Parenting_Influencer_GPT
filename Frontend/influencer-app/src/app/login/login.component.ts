@@ -46,10 +46,8 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('userData', JSON.stringify(response));
 
         // Show success alert
-        this.showSuccessAlert();
+        this.showSuccessAlert(response);
 
-        // Navigate to the home page
-        this.router.navigateByUrl('/home');
       },
       (error) => {
         this.isLoading = false;
@@ -64,14 +62,17 @@ export class LoginComponent implements OnInit {
   }
 
   // Method to show success alert
-  showSuccessAlert() {
+  showSuccessAlert(response:any) {
     Swal.fire({
       icon: 'success',
-      title: 'Success!',
-      width: '25%',
-      text: 'Login successful!',
+      title: `Welcome ${response.Data.name}`,
+      width: 'auto',
+      text: `Login Successfully`,
       timer: 2000, // Auto close the alert after 2.5 seconds
       showConfirmButton: false,
+    }).then(()=>{
+      // Navigate to the home page
+      this.router.navigateByUrl('/home');
     });
   }
 
