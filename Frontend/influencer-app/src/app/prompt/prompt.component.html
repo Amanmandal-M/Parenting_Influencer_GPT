@@ -2,19 +2,16 @@
   <div class="chat-container">
     <!-- Left side - Chat history -->
     <div class="chat-history">
-      <!-- Add ngFor loop here to display previous chats -->
-      <div class="chat-message">
+      <div *ngFor="let message of chatMessages" class="chat-message">
         <span class="user-name">User</span>
-        <p class="user-message">Ask anything about your child and any Parenting issues</p>
+        <p class="user-message">{{ message }}</p>
       </div>
-      <!-- Add more chat messages here -->
     </div>
 
     <!-- Right side - User input -->
     <div class="user-input">
-      <textarea type="text" placeholder="Type your message..." ></textarea>
-      <button class="send-button"><i class='bx bx-chevrons-right'></i></button>
+      <textarea [(ngModel)]="userMessage" placeholder="Type your message..."></textarea>
+      <button class="send-button" (click)="onSendMessage()"><i class='bx bx-chevrons-right'></i></button>
     </div>
-
   </div>
 </div>

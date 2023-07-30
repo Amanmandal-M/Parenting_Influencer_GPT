@@ -67,9 +67,11 @@
     }
   
     footer {
+      width: 100%;
+      border: 1px solid red;
       text-align: center;
-      padding: 20px 0;
-      background-color: #f4f4f4;
+      padding: 10px 0;
+      background-color: #dcd7d7;
   
       p {
         font-size: 14px;
